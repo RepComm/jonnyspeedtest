@@ -1,11 +1,12 @@
 {
-  "name": "ts-esm-babel-template",
+  "name": "jonnyspeedtest",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Babel template for compiling ts to esm",
-  "main": "index.js",
+  "description": "http speed test",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RepComm/ts-esm-babel-template.git"
+    "url": "git+https://github.com/RepComm/jonnyspeedtest.git"
   },
   "keywords": [
     "typescript",
@@ -16,16 +17,18 @@
   "author": "Jonathan Crowder",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/RepComm/ts-esm-babel-template/issues"
+    "url": "https://github.com/RepComm/jonnyspeedtest/issues"
   },
-  "homepage": "https://github.com/RepComm/ts-esm-babel-template#readme",
+  "homepage": "https://github.com/RepComm/jonnyspeedtest#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
     "@babel/plugin-transform-typescript": "^7.10.5",
-    "@babel/preset-env": "^7.14.1"
+    "@babel/preset-env": "^7.14.1",
+    "@types/node": "^17.0.23"
   },
   "scripts": {
-    "build": "babel src --extensions .ts --copy-files -d lib"
+    "build": "babel src --extensions .ts --copy-files -d lib",
+    "start": "node ."
   }
 }
